@@ -4,3 +4,14 @@
     margin: 3rem auto 6rem;
     border: 2px green solid;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px red dashed;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
