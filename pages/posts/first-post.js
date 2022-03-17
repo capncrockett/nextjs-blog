@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Layout from "../../components/layout";
+import styles from "../components/alert.module.css";
+import cn from "classnames";
 
 export default function FirstPost() {
   return (
@@ -17,6 +19,14 @@ export default function FirstPost() {
           alt="It's Joe"
         />
         <h1>First Post</h1>
+        <div
+          className={cn({
+            [styles.success]: type === "success",
+            [styles.error]: type === "error",
+          })}
+        >
+          {children}
+        </div>
         <h2>
           <Link href="/">
             <a>Back to home</a>
