@@ -67,3 +67,32 @@ export default function Home() {
 // console.log(parseFloat("10.2abc"));
 // console.log(+"10.2abc");
 
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// // Define an object
+// var you = new Person('You', 24);
+// // We are creating a new person named "You" aged 24.
+
+// console.log(you)
+// console.log(you.name)
+// console.log(you.age)
+
+var a = ["dog", "cat", "hen"];
+// a.length; // 3
+
+// for (var i = 0; i < a.length; i++) {
+//   console.log(i)
+// }
+
+// console.log(a.toString());
+// console.log(a.toLocaleString());
+// console.log(a.concat(["cow", "bird"], "goat"));
+// console.log(a.join(" "));
+// console.log(a.pop());
+// console.log(a.push("sheep"));
+// console.log(a.shift("emu"));
+console.log(a);
+console.log(a.sort());
