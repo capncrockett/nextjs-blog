@@ -94,5 +94,53 @@ var a = ["dog", "cat", "hen"];
 // console.log(a.pop());
 // console.log(a.push("sheep"));
 // console.log(a.shift("emu"));
-console.log(a);
-console.log(a.sort());
+// console.log(a);
+// console.log(a.sort());
+
+// function add(x, y) {
+//   // const total = x + y
+//   return x + y;
+// }
+
+// console.log(add(2, 3));
+
+function add() {
+  let sum = 0;
+  for (const item of arguments) {
+    sum += item;
+  }
+  return sum;
+}
+
+console.log(add(2, 3, 4, 5));
+
+// function avg() {
+//   let sum = 0;
+//   for (const item of arguments) {
+//     sum += item;
+//   }
+//   return sum / arguments.length;
+// }
+
+// console.log(avg(2, 3, 4, 5));
+
+function avg(...args) {
+  let sum = 0;
+  for (const item of args) {
+    sum += item;
+  }
+  return sum / args.length;
+}
+
+console.log(avg(2, 3, 4, 5));
+
+function avgArray(arr) {
+  let sum = 0;
+  for (const item of arr) {
+    sum += item;
+  }
+  return sum / arr.length;
+}
+
+console.log(avgArray([2, 3, 4, 5]));
+console.log(avg.apply(null, [2, 3, 4, 5]));
